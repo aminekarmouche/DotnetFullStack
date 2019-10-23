@@ -13,6 +13,8 @@ namespace MyTuto.Pages.Restaurants
     {
         private readonly IRestaurantData restaurantData;
 
+        [TempData]
+        public string Message { get; set; }
         public Restaurant Restaurant{ get; set; }
 
         public DetailsModel(IRestaurantData restaurantData)
